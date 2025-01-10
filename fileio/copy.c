@@ -49,6 +49,8 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: read");
 		exit(EXIT_FAILURE);
 	}
+	dprintf(outputFd, "Writing to check if it works\n"); /* You can write or output error and print using dprintf */
+	dprintf(1, "Hello, %s! Welcome to %s. The number %d\n", "Arinze", "dprintf", (O_RDONLY | O_WRONLY));
 	if (close(inputFd) == -1)
 	{
 		fprintf(stderr, "Error: close input");
