@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pid_max=$(cat /proc/sys/kernel/pid_max)
+echo "This is the max_value of PID $pid_max"
